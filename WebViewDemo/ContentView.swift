@@ -64,18 +64,42 @@ struct ContentView: View {
         
         
         VStack {
-            Text(presentAlert ? "True 2" : "False 2").alert(isPresented: $presentAlert, content: {
+            Text("App Version Check").alert(isPresented: $presentAlert, content: {
                     
                     Alert(
-                        title: Text("선택적 업데이트 안내"),
-                        message: Text("앱 변경 사항이 있습니다."),
-                        primaryButton: .destructive(Text("업데이트")) {
-                            print("앱 업데이트로 이동...")
-                        },
-                        secondaryButton: .cancel()
+                        title: Text("필수 업데이트 안내"),
+                        message: Text("앱데아트를 하셔야 정상적으로 이용이 가능합니다."),
+                        dismissButton: .default(Text("OK"), action: {
+                            // APP Page go
+                            // later Stop
+                            print("APP Page go")
+                        })
                     )
                 }
             )
+            
+            /*
+            Text("App Version Check 2").alert(isPresented: $presentAlert, content: {
+                    
+                    Alert(
+                        title: Text("선택적 업데이트 안내"),
+                        message: Text("앱데아트를 하셔야 정상적으로 이용이 가능합니다."),
+                        primaryButton: Alert.Button.default(
+                            Text("UPDATE"), action: {
+                                // APP Page go
+                                // later Stop
+                                print("Yes")
+                            }
+                        ),
+                        secondaryButton: Alert.Button.cancel(
+                            Text("Next.."), action: {
+                                print("No")
+                            }
+                        )
+                    )
+                }
+            )
+            */
             
             Text(targetBuildVersion)
             Text(targetAppVersion)
