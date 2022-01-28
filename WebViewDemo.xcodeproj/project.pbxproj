@@ -12,6 +12,7 @@
 		0984AAA7279921CB004B873C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0984AAA6279921CB004B873C /* Assets.xcassets */; };
 		0984AAAA279921CB004B873C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0984AAA9279921CB004B873C /* Preview Assets.xcassets */; };
 		09875B5127A3C48100468310 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09875B5027A3C48100468310 /* WebContentView.swift */; };
+		09875B5327A3CB6900468310 /* AppVersionCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09875B5227A3CB6900468310 /* AppVersionCheckView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0984AAA6279921CB004B873C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0984AAA9279921CB004B873C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09875B5027A3C48100468310 /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
+		09875B5227A3CB6900468310 /* AppVersionCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionCheckView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				0984AAA2279921CA004B873C /* WebViewDemoApp.swift */,
 				09875B5027A3C48100468310 /* WebContentView.swift */,
+				09875B5227A3CB6900468310 /* AppVersionCheckView.swift */,
 				0984AAA4279921CA004B873C /* ContentView.swift */,
 				0984AAA6279921CB004B873C /* Assets.xcassets */,
 				0984AAA8279921CB004B873C /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09875B5327A3CB6900468310 /* AppVersionCheckView.swift in Sources */,
 				0984AAA5279921CA004B873C /* ContentView.swift in Sources */,
 				09875B5127A3C48100468310 /* WebContentView.swift in Sources */,
 				0984AAA3279921CA004B873C /* WebViewDemoApp.swift in Sources */,
@@ -286,7 +290,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 1.7.8;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.example.WebViewDemo;
 				PRODUCT_NAME = WebViewDemo;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -316,7 +320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 1.7.8;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.example.WebViewDemo;
 				PRODUCT_NAME = WebViewDemo;
 				SWIFT_EMIT_LOC_STRINGS = YES;
