@@ -6,25 +6,11 @@
 //  Start 2022
 
 import SwiftUI
-import WebKit
 
-struct WebView: UIViewRepresentable {
-    
-    let request: URLRequest
-    
-    func makeUIView(context: Context) -> WKWebView {
-        return WKWebView()
-    }
-    
-    func updateUIView(_ uiView: WKWebView, context: Context) {
-        uiView.load(request)
-    }
-}
 
 struct ContentView: View {
     
     @State private var isShowPhotoLibrary = false
-    @State private var image = UIImage()
     
     //Build Number (Currebt Project Version)
     func currentBuildNumber() -> String {
@@ -118,16 +104,6 @@ struct ContentView: View {
         }
         
         
-        /*
-        let urlString = "https://www.naver.com"
-        if let url = URL(string: urlString) {
-            let urlReq = URLRequest(url: url)
-            WebView(request: urlReq)
-        }
-        else{
-                Text("Try Again")
-        }
-        */
     }
 }
 
